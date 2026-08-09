@@ -1055,12 +1055,10 @@ const tripData = {
 
   // Otras actividades reservadas o planificadas
   bookedActivities: [
-    { date: "2026-08-19", city: "St Augustine", name: "Parking", time: null },
     { date: "2026-08-20", city: "Orlando", name: "NASA Kennedy Space Center", time: null, url: "https://www.kennedyspacecenter.com/es/info/tickets/" },
     { date: "2026-08-21", city: "Orlando", name: "Compras / Outlets", time: null },
     { date: "2026-08-22", city: "Orlando", name: "Disney World", time: null },
     { date: "2026-08-23", city: "Miami", name: "Everglades (Airboat Tour)", time: null },
-    { date: "2026-08-24", city: "Miami", name: "Concierto Maná", time: null },
     { date: "2026-08-25", city: "Miami", name: "Nado con delfines", time: null },
     { date: "2026-08-26", city: "Key West", name: "Playa", time: null },
     { date: "2026-08-27", city: "Key West", name: "Snorkel", time: null },
@@ -1089,12 +1087,11 @@ const tripData = {
         time: "22:25"
       },
       duration: "8h 35m",
-      class: "Economy",
       passengers: [
-        { name: "VLS", seat: "24C", loyaltyCard: "56183445", ticket: "Adulto" },
-        { name: "LFM", seat: "24D", loyaltyCard: "Incluir | Registrar", ticket: "Adulto" },
-        { name: "VLF", seat: "24E", loyaltyCard: "N/A", ticket: "Niño" },
-        { name: "MLF", seat: "24F", loyaltyCard: "N/A", ticket: "Niño" }
+        { seat: "24C" },
+        { seat: "24D" },
+        { seat: "24E"},
+        { seat: "24F" }
       ],
       baggage: "1 pieza hasta 10 kg (56x40x25cm) + 1 accesorio personal",
       returnFlight: {
@@ -1114,14 +1111,7 @@ const tripData = {
           date: "2026-09-01"
         },
         duration: "7h 35m",
-        class: "Economy",
         seats: "25H, 25D, 25G, 25E"
-      },
-      payment: {
-        type: "Master Card",
-        cardNumber: "************0791",
-        holder: "LFM",
-        email: "email@gmail.com"
       },
       url: "https://www.iberia.com"
     },
@@ -1144,16 +1134,7 @@ const tripData = {
         time: "10:00 AM"
       },
       duration: "3h 01m",
-      class: "Económica (B)",
-      passengers: [
-        { name: "VLS", seat: "10D", ticketNumber: "0012325496571" },
-        { name: "LFM", seat: "10F", ticketNumber: "0012325496572" },
-        { name: "VLF", seat: "10E", ticketNumber: "0012325496573" },
-        { name: "MLF", seat: "10C", ticketNumber: "0012325496574" }
-      ],
       seats: "10F, 10E, 10D, 10C",
-      meal: "Refrigerio",
-      baggage: "Equipaje estándar",
       url: "https://www.aa.com"
     }
   ],
@@ -1843,72 +1824,13 @@ const tripData = {
       ]
     }
   ],
-  // Datos ESTA - Grupo ID 3220997937 (4 solicitudes, todas aprobadas)
-  estaGroup: {
-    groupId: "3220997937",
-    familyName: "",
-    firstName: "VLS",
-    email: "email@gmail.com",
-    totalApplications: 4,
-  },
-
-  esta: [
-    {
-      name: "VLS",
-      status: "valid",
-      statusText: "Authorization Approved",
-      dateOfBirth: "19/10/1984",
-      applicationNumber: "21J141T6F42960Y1",
-      passport: "PAG524389",
-      estaExpiry: "07/09/2027",
-      passportExpiry: "21/02/2028",
-    },
-    {
-      name: "LFM",
-      status: "valid",
-      statusText: "Authorization Approved",
-      dateOfBirth: "22/01/1985",
-      applicationNumber: "271W7417M2203222",
-      passport: "PAG524390",
-      estaExpiry: "07/09/2027",
-      passportExpiry: "21/02/2028",
-    },
-    {
-      name: "VLF",
-      status: "valid",
-      statusText: "Authorization Approved",
-      dateOfBirth: "07/01/2016",
-      applicationNumber: "2W1Z0416O50R2544",
-      passport: "PAN411865",
-      estaExpiry: "21/03/2027",
-      passportExpiry: "21/03/2027",
-    },
-    {
-      name: "MLF",
-      status: "valid",
-      statusText: "Authorization Approved",
-      dateOfBirth: "30/01/2018",
-      applicationNumber: "161P1M1J492145S4",
-      passport: "PAT004396",
-      estaExpiry: "07/09/2027",
-      passportExpiry: "14/02/2029",
-    }
-  ],
-
-  carRental: {
+   carRental: {
     company: "AVIS",
     reservation: "0929-2371-ES-4",
     bookingDate: "15/03/2026 10:48",
     bookingReference: "0929-2371-ES-4 PP",
     vehicle: "Toyota Camry o similar",
     category: "Grande/s",
-    driver: "VLS",
-    email: "email@gmail.com",
-    requirements: [
-      "Carné de conducir en vigor",
-      "Tarjeta para autorización",
-      "Titular de documentos debe ser conductor principal"
-    ],
     pickup: {
       date: "11/08/2026",
       location: "Newark Airport"
