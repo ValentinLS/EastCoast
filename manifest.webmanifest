@@ -1,0 +1,19 @@
+{
+  "name": "RoadTrip Costa Este USA 2026",
+  "short_name": "RoadTrip USA",
+  "description": "Guía familiar del road trip por la Costa Este de Estados Unidos en 2026.",
+  "start_url": "./RoadTrip-Costa-Este-USA-2026.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#f8fafc",
+  "theme_color": "#2563eb",
+  "icons": [
+    {
+      "src": "./site-icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
